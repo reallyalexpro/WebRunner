@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>48e51a2f-5d62-4dbd-9194-6a3f86397974</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\втб\.nuget\packages\nlog.config\4.7.9\contentFiles\any\any\NLog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="5.0.1" />
+    <PackageReference Include="NLog" Version="4.7.9" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.7.2" />
+  </ItemGroup>
+
+
+</Project>
