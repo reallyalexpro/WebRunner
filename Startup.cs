@@ -35,6 +35,14 @@ namespace WebRunner
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(config =>
+            {
+                config
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
+
             app.UseRouting();
 
             app.UseAuthorization();
